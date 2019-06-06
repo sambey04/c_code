@@ -1,0 +1,6 @@
+1) start 
+2) initialize n,bt[],tat[],avwt=0,avat=0,j
+3) scan for burst time 
+4) if false w[0]=0 else i++
+5) if j< n is false calculate turn around time 
+6) stop
