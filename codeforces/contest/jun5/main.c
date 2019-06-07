@@ -8,31 +8,41 @@ int32_t main()
     int t;
     cin >> t;
     long long n[19];
-    int k[19];
-   int count=0,a=0;
+   long long k[19];
+
+  long long count=0,a=0;
+
     for( a;a<t;a++)
     {
     cin >> n[a] >> k[a];
-    cout << "in ram";
+    //cout << "in ram";
     }
 
-cout << "ram \n";
+//cout << "ram \n";
     for(a=0;a<t;a++)
     {
-    while(n[a]!=0){
-        if(n[a]%k[a]==0)
+    while(n[a]!=0 ){
+        if(n[a]%k[a]==0   )
     {
+    if(n[a]==1 && k[a]==1){
+        n[a]--;
     count++;
+    }
+    else{
+        count++;
     n[a]=n[a]/k[a];
-   // cout << "value when divide "  << n[a] << " count " << count<< "\n"; 
+//cout << "value when divide= "  << n[a] << " count " << count<< "\n"; 
+    }
     }
     else
     {
-        n[a]--;
-    count++;
+    count=count+n[a]%k[a];
+        n[a]=n[a]-n[a]%k[a];
+//cout << "value in else =" << n[a] <<" coutn=="<< count << "\n";
     }}
     cout << count << "\n";
    count=0;
+//cout << "hello";
     }
 
 }
