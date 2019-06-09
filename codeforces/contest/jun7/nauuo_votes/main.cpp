@@ -1,3 +1,5 @@
+//working 
+//https://codeforces.com/contest/1173/problem/A
 #include<bits/stdc++.h>
 using namespace std;
 
