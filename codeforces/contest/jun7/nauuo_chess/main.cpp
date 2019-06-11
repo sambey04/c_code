@@ -18,16 +18,18 @@ cout << res;
 }
     
  int fun(int m){
-    int count=0,i=0,j=0;
-for(i=1;i<m;i++)
-        for(j=1;j<m;j++)
+    int count=1,i=0,j=0;
+for(i=1;i<=m;i++)
+        for(j=1;j<=m;j++)
         {
-            if(abs(1-i) + abs(1-j) >= abs(i-j))
-            {   count++; cout << i <<j << "\n";}
+            if(abs(1-i) + abs(1-j) >= abs(1-count))
+            {   count++; cout << i << " " <<j << " " << m << "\n";}
 else 
 {
-cout << "fail";
+cout << "fail" << "\n";
+
     m++;
+    count =0;
     fun(m);
 
 }}
