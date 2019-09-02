@@ -5,8 +5,8 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-      int t,n,ans=0,z=1;
-	    long  a[150000];	 
+      long t,n,ans=0,z=1;
+	    long  a[15000];	 
     
     cin >> t;
     for(int x=0;x<t;x++)
@@ -19,22 +19,29 @@ int main()
     }
    for(int y=0;y<n;y++)
    {
+	   //cout <<"value of y=" <<y << "\n";
+	   z=y+1;
    while(1)
    {
-	   if(z>n)
+	   if(z>=n)
 		   break;
-	   else if(a[y]<a[z]){
+	   else if(a[y]>a[z])
+   {
            ans++;
-	   z=y+1;
+	   //z=y+1;
+//cout << "dead \n";
 	   break;
    
    }
 	   z++;
+//	   cout << "value of z is=" << z << "\n";
+//	   cout << "value of a[]=" << a[y] << "\n";
    }
    } 
     
+    cout << ans << "\n";
+    ans=0;
     }
-    cout << ans;
     
     
     return 0;
