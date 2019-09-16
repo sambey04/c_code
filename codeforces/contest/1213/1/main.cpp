@@ -5,8 +5,8 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-      long t,n,ans=0,z=1;
-	    long  a[15000];	 
+      int t,n,ans=0,z=1;
+	     int a[150010];	 
     
     cin >> t;
     for(int x=0;x<t;x++)
